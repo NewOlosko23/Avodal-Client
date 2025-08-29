@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Search, Download, FileText, Image } from "lucide-react";
+import { Search, Download, FileText } from "lucide-react";
 import { resources } from "../Data/Resources";
+import { Helmet } from "react-helmet-async";
 
 const Resource = () => {
   const [search, setSearch] = useState("");
@@ -11,6 +12,54 @@ const Resource = () => {
 
   return (
     <div className="bg-gray-50 py-12 px-6 md:px-12 mt-16">
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>Resource Center | Avodal Technology</title>
+        <meta
+          name="description"
+          content="Explore Avodal Technology's Resource Center — articles, tutorials, downloads, and guides on IT, software, networking, CCTV, and digital transformation."
+        />
+        <meta
+          name="keywords"
+          content="Avodal Technology resources, IT guides, tutorials, free downloads, CCTV resources, networking guides, software tips, tech articles Kenya"
+        />
+        <link rel="canonical" href="https://www.avodaltech.com/resources" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Resource Center | Avodal Technology"
+        />
+        <meta
+          property="og:description"
+          content="Stay ahead in technology with Avodal's Resource Center. Access articles, tutorials, and downloadable resources on IT solutions, networking, CCTV, and software."
+        />
+        <meta
+          property="og:image"
+          content="https://newolosko23.github.io/avodal/stock7.jpg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.avodaltech.com/resources"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Resource Center | Avodal Technology"
+        />
+        <meta
+          name="twitter:description"
+          content="Browse Avodal Technology's tech resource hub — tutorials, downloads, and guides to boost your IT knowledge."
+        />
+        <meta
+          name="twitter:image"
+          content="https://newolosko23.github.io/avodal/stock7.jpg"
+        />
+      </Helmet>
+
       {/* Header */}
       <div className="max-w-5xl mx-auto text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">

@@ -14,7 +14,7 @@ const steps = [
   },
   {
     id: 2,
-    title: "Receive a Quote Within 6 Hours",
+    title: "Receive a Quote Within 2 Hours",
     description:
       "We carefully assess your project and, within 6 hours, deliver a detailed quote. The quote outlines the project scope, timeline, and costs for your review.",
     image: Step2,
